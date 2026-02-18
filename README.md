@@ -71,6 +71,7 @@ MetodoPago <|.. Paypal
 Carrito ..> MetodoPago
 ```
 
+#Ejercicio 06
 ``` mermaid
 classDiagram
 class Recurso{
