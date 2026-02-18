@@ -27,3 +27,16 @@ class Estudiante{
 
 Persona <|-- Estudiante
 ```
+
+#Ejercicio 03
+```mermaid
+classDiagram
+    class Computadora
+
+    class PlacaBase
+
+    class Raton
+
+    Computadora *-- PlacaBase : composición
+    Computadora o-- Raton : agregación
+```
