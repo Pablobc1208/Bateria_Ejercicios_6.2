@@ -37,6 +37,6 @@ classDiagram
 
     class Raton
 
-    Computadora *-- PlacaBase : composición
-    Computadora o-- Raton : agregación
+    Computadora *-- PlacaBase 
+    Computadora o-- Raton
 ```
