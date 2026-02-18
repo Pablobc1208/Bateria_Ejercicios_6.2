@@ -12,3 +12,18 @@ class Usuario{
 }
 
 ```
+
+#Ejercicio 02
+``` mermaid
+classDiagram
+class Persona{
+  #String nombre
+  #String dni
+} 
+class Estudiante{
+ -int numeroExpediente
+ -float notaMedia
+}
+
+Persona <|-- Estudiante
+```
