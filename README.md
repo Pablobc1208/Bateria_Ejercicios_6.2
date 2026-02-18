@@ -1,14 +1,14 @@
 # Bateria_Ejercicios_6.2
 #Ejercicio 01
-´´´ mermaid
+``` mermaid
 classDiagram
 
 class Usuario{
-    Usuario : -String nombre
-    Usuario : -String contrasena
-    Usuario : +String correo
-    Usuario: +cambiarContrasena(String) void
-    Usuario : -validarEmail() void
+     -String nombre
+     -String contrasena
+     +String correo
+     +cambiarContrasena(String) void
+     -validarEmail() void
 }
 
 ´´´
