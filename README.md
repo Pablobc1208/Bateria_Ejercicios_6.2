@@ -47,7 +47,7 @@ classDiagram
 class CentroComercial
 class Tienda
 
-CentroComercial "1" --> "1..*" Tienda
+CentroComercial "1" ..> "1..*" Tienda
 ```
 
 #Ejercicio 05
@@ -69,4 +69,32 @@ class Carrito{
 MetodoPago <|.. Tarjeta
 MetodoPago <|.. Paypal
 Carrito ..> MetodoPago
+```
+
+``` mermaid
+classDiagram
+class Recurso{
+     -int id
+     -String titulo
+     +prestar() void
+     +devolver() void
+}
+
+class Libro{
+     -String isbn
+}
+
+class Revista{
+     -int numeroEdicion
+}
+
+class Usuario {
+     -String nombre
+     -int numCarnet
+}
+
+Recurso <|.. Libro
+Recurso <|.. Revista
+
+Usuario "1" ..> "0..*" Recurso
 ```
