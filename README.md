@@ -50,3 +50,23 @@ class Tienda
 CentroComercial "1" --> "1..*" Tienda
 ```
 
+#Ejercicio 05
+``` mermaid
+classDiagram
+class MetodoPago {
+     <<interface>>
+     +procesar(double importe) void
+}
+
+class Tarjeta{}
+
+class Paypal{}
+
+class Carrito{
+     +pagar(MetodoPago miPago) void
+}
+
+MetodoPago <|.. Tarjeta
+MetodoPago <|.. Paypal
+Carrito ..> MetodoPago
+```
