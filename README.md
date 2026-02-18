@@ -3,10 +3,12 @@
 ´´´ mermaid
 classDiagram
 
-    Animal : -String nombre
-    Animal : -String contrasena
-    Animal : +String correo
-    Animal: +cambiarContrasena(String) void
-    Animal : -validarEmail() void
+class Usuario{
+    Usuario : -String nombre
+    Usuario : -String contrasena
+    Usuario : +String correo
+    Usuario: +cambiarContrasena(String) void
+    Usuario : -validarEmail() void
+}
 
 ´´´
