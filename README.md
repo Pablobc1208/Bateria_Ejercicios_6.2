@@ -40,3 +40,13 @@ classDiagram
     Computadora *-- PlacaBase 
     Computadora o-- Raton
 ```
+
+#Ejercicio 04
+``` mermaid
+classDiagram
+class CentroComercial
+class Tienda
+
+CentroComercial "1" --> "1..*" Tienda
+```
+
